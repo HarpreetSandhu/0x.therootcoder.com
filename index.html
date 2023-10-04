@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheRootCoder</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         .signal-noise-vertical {
-            width: 400px;
-            height: 700px;
-            margin: auto;
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            margin: 0 auto;
             background-image: repeating-radial-gradient(circle at 5% 5%, white, black 0.0009999px);
             animation: flip 0.01s linear infinite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         @keyframes flip {
@@ -20,11 +32,15 @@
                 background-size: 200% 200%;
             }
         }
+
+        span {
+            font-size: 5vw;
+        }
     </style>
 </head>
-<body style="width: 100%;height: 100%;display: flex;">
+<body>
 <div class="signal-noise-vertical">
-    <span style="font-size: 50px;text-align: center; vertical-align: middle;">0x</span>
+    <span>0x</span>
     <!--    Coming Soon :P-->
 </div>
 </body>
