@@ -12,11 +12,10 @@
 
         .signal-noise-vertical {
             width: 100%;
-            max-width: 400px;
             height: 100vh;
             margin: 0 auto;
-            background-image: repeating-radial-gradient(circle at 5% 5%, white, black 0.0009999px);
-            animation: flip 0.01s linear infinite;
+            background-image: repeating-radial-gradient(circle at 5% 5%, white, black 1px);
+            animation: flip 0.01s cubic-bezier(1,0,0,1) infinite;;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -26,10 +25,10 @@
 
         @keyframes flip {
             from {
-                background-size: 100% 100%;
+                background-size: 0% 0%;
             }
             to {
-                background-size: 200% 200%;
+                background-size: 50% 50%;
             }
         }
 
@@ -41,6 +40,8 @@
 <body>
 <div class="signal-noise-vertical">
     <span>0x</span>
+    <br>
+    <p style="color: #777171; font-style: italic; font-family: 'Roboto Thin';">  &nbsp; &nbsp; Coming soon...</p>
     <!--    Coming Soon :P-->
 </div>
 </body>
